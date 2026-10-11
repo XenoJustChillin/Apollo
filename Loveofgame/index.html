@@ -7,13 +7,15 @@
     <title>Apollo</title>
 </head>
 <body>
-    <div class="mainCont w-[100vw]">
+    <div class="mainCont text-white">
 
 
 
         <!--BEGINNING OF HEADER-->
-        <div class="header w-[100vw] flex justify-between p-5 bg-red-200">
-            <div class="logo">placeholder</div>
+        <div class="header flex justify-between p-5 bg-blue-900">
+            <div class="logo max-w-[150px]">
+                <img src="./assets/mainApollo.png" class="w-[150px]"/>
+            </div>
             <div class="nav">
                 HamMenu
             </div>
@@ -24,27 +26,34 @@
 
         <!--BEGINNING OF HERO-->
         <div class="hero bg-[url('./assets/mainHeroImg.jpg')] bg-cover bg-center bg-no-repeat m-4 p-4 h-[60vh] rounded-[8px] flex justify-center items-center">
-            <div class="heroContent bg-blue-300 py-8 px-8 rounded-[4px] shadow-md">
-                <h1 class="text-[2rem] font-bold">Main Heading</h1>
-                <p class="text-[0.75rem] py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repellendus!</p>
-                <button class="bg-yellow-300 px-3 py-1 rounded-[4px] shadow-sm mt-2 text-[0.75rem]">Contact Us</button>
+            <div class="heroContent bg-blue-900 py-8 px-8 rounded-[4px] shadow-md">
+                <h1 class="text-[1.75rem] font-bold italic">Never miss a customer again.</h1>
+                <p class="text-[1.15rem] py-2">An AI assistant that answers texts and missed calls for hair and nail salons.</p>
+                <button class="bg-blue-400 px-3 py-1 rounded-[4px] shadow-sm mt-2 text-[1.15rem]">Contact Us</button>
             </div>
         </div>
         <!--END OF HEADER-->
 
 
-        <div class="w-[90vw] ml-[5vw] pb-3 pt-2 opacity-15">
-            <hr>
-        </div>
+        <div class="w-[90vw] ml-[5vw] my-10 h-[1px] bg-black"></div>
 
 
         <!--BEGINNING OF HOW IT WORKS-->
         <div class="howItWorks">
-            <h1 class="text-[1.5rem] font-bold m-4 pb-4 underline">How It Works:</h1>
-            <div class="cardBox">
-                <div class="card bg-green-200 m-4 p-6 flex flex-row items-end rounded-[4px] shadow-sm">
-                    <h2 class="text-[1.25rem] font-bold">1.</h2>
-                    <p class="text-[0.75rem] pb-1 pl-3">The customer texts or calls your business.</p>
+            <h1 class="text-[1.75rem] font-bold m-4 pb-4 italic text-black">How It Works:</h1>
+            <div class="cardBox md:flex ">
+                <div class="card bg-blue-900 m-4 p-6 flex flex-row justify-center gap-4 items-center rounded-[4px] shadow-md">
+                    <p class="text-[1.15rem] text-center">The customer texts or calls your salon.</p>
+                </div>
+
+                <div class="flex justify-center align-center">
+                    <div class="max-w-[30px] -scale-x-100">
+                        <img src="./assets/arrowDown.png" class=" w-[100%] -scale-x-100"/>
+                    </div>
+                </div>
+
+                <div class="card bg-blue-900 m-4 p-6 flex flex-row justify-center gap-4 items-center rounded-[4px] shadow-sm">
+                    <p class="text-[1.15rem] pl-3 w-80 text-center">Your AI assistant answers and collects booking details.</p>
                 </div>
 
                 <div class="flex justify-center align-center">
@@ -53,29 +62,59 @@
                     </div>
                 </div>
 
-                <div class="card bg-green-200 m-4 p-6 flex flex-row items-end rounded-[4px] shadow-sm">
-                    <h2 class="text-[1.25rem] font-bold">2.</h2>
-                    <p class="text-[0.75rem] pb-1 pl-3">Your assistant answers and collects booking details.</p>
-                </div>
-
-                <div class="flex justify-center align-center">
-                    <div class="max-w-[30px]">
-                        <img src="./assets/arrowDown.png" class=" w-[100%]"/>
-                    </div>
-                </div>
-
-                <div class="card bg-green-200 m-4 p-6 flex flex-row items-end rounded-[4px] shadow-sm">
-                    <h2 class="text-[1.25rem] font-bold">3.</h2>
-                    <p class="text-[0.75rem] pb-1 pl-3">Your business gets a text summary and confirms.</p>
+                <div class="card bg-blue-900 m-4 p-6 flex flex-row justify-center gap-4 items-center rounded-[4px] shadow-sm">
+                    <p class="text-[1.15rem] text-center">You recieve a text summary and confirms.</p>
                 </div>
             </div>
         </div>
         <!--END OF HOW IT WORKS-->
 
 
-        <div class="w-[90vw] ml-[5vw] pb-3 pt-2 opacity-15">
-            <hr>
+        <div class="w-[90vw] ml-[5vw] my-10 h-[1px] bg-black"></div>
+
+
+        <!--BEGINNING OF CONTACT US-->
+        <div class="flex flex-col justify-center items-center text-black">
+            <div class="flex flex-col justify-center items-center">
+                <p class="text-blue-400 p-none m-none">Get In Touch</p>
+                <h1 class="text-[24px]">Let's <i class="text-blue-400">Connect</i></h1>
+                <p class="opacity-90 text-center px-10">Have a question or special request? We'll get back to you within 24 hours.</p>
+            </div>
+            <hr class="bg-pink-300">
+            <div class="text-white flex justify-between flex-col md:w-[700px] w-[85vw] gap-2 bg-[#333332] border-1 border-white p-4 mx-4 mb-4 rounded-[10px]">
+                <div class="flex justify-evenly flex-col">
+                    <label for="fname">First Name:</label>
+                    <input type="text" class="bg-black border-gray-500 border-opacity-80 border-1 rounded-1"/>
+                </div>
+
+                <div class="flex justify-between flex-col">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" class="bg-black border-gray-500 border-opacity-80 border-1 rounded-1"/>
+                </div>
+                
+
+                <div class="flex justify-between flex-col">
+                    <label for="fname">Email:</label>
+                    <input type="text" class="bg-black border-gray-500 border-opacity-80 border-1 rounded-1"/>
+                </div>
+
+                <div class="flex justify-between flex-col">
+                    <label for="fname">Phone Number:</label>
+                    <input type="text" class="bg-black border-gray-500 border-opacity-80 border-1 rounded-1"/>
+                </div>
+
+                <div class="flex justify-between flex-col">
+                    <label for="fname">Message:</label>
+                    <input type="text" class="bg-black border-gray-500 border-opacity-80 border-1 rounded-2"/>
+                </div>
+
+                <button class="w-[100%] bg-blue-900 mt-3 p-2 rounded-4 transition duration-300 hover:bg-blue-300 hover:text-black">Send Message</button>
+            </div>
         </div>
+        <!--END OF CONTACT US-->
+
+
+        <div class="w-[90vw] ml-[5vw] my-10 h-[1px] bg-black"></div>
 
 
         <!--BEGINNING OF ABOUT MESSAGES-->
@@ -85,17 +124,17 @@
         <!--END OF ABOUT MESSAGES-->
 
 
-
-        <!--BEGINNING OF CONTACT US-->
-        <div class="contactUs"></div>
-        <!--END OF CONTACT US-->
-
-
-
         <!--BEGINNING OF FOOTER-->
-        <div class="footer"></div>
+        <div class="footer">
+            <h1>2026 Apollo By Vincent Rivera</h1>
+        </div>
         <!--END OF FOOTER-->
 
+
+
+    </div>
+</body>
+</html>
 
 
     </div>
